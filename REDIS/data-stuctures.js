@@ -52,8 +52,8 @@ async function redisDataStructures() {
     // await client.lPush("notes", ["note 1", "note 2", "note 3"]);
 
     // Lrange
-    const extractAllNotes = await client.lRange("notes", 0, -1); // it will retrun all the elements from
-    console.log("extractAllNotes", extractAllNotes);
+    const extractAllNotess = await client.lRange("notes", 0, -1); // it will retrun all the elements from
+    console.log("extractAllNotes", extractAllNotess);
 
     // Lpop
     const extractFirstNote = await client.lPop("notes");
